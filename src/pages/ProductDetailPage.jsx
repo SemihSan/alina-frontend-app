@@ -25,10 +25,15 @@
           if (imageUrl.startsWith('http://') || imageUrl.startsWith('https://')) {
             return imageUrl;
           }
-  if (imageUrl.startsWith('/')) {
-    return imageUrl;
-  }
-  return `/${imageUrl}`;
+          if (imageUrl.startsWith('/')) {
+            return imageUrl;
+          }
+          return `/${imageUrl}`;
+        }
+
+        export default function ProductDetailPage() {
+          const { slug } = useParams();
+          const navigate = useNavigate();
           const { addToCart } = useCart();
           const { isFavorite, toggleFavorite } = useFavorites();
           const { user, dealer } = useAuth();
