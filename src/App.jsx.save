@@ -1,0 +1,69 @@
+m6import { Routes, Route, Link } from 'react-router-dom';
+import DealerRewardsPage from './pages/DealerRewardsPage';
+import StorePage from './pages/StorePage';
+import DealerLoginPage from './pages/DealerLoginPage';
+
+function App() {
+  return (
+    <div className="min-h-screen flex flex-col">
+      {/* Üst navbar */}
+      <header className="bg-white border-b border-slate-200">
+        <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <span className="w-8 h-8 rounded-full bg-pink-500 inline-block" />
+            <span className="font-semibold text-lg">Alina</span>
+          </div>
+          <nav className="flex gap-4 text-sm">
+            {/* Mağaza sayfası */}
+            <Link to="/store" className="hover:text-pink-600 font-medium">
+              Mağaza
+            </Link>
+            {/* Bayi ödül mağazası */}
+            <Link to="/dealer/rewards" className="hover:text-pink-600">
+              Bayi Ödül Mağazası
+            </Link>
+          </nav>
+        </div>
+      </header>
+
+      {/* Sayfa içeriği */}
+      <main className="flex-1">
+        <Routes>
+          {/* Landing / ana sayfa */}
+          <Route
+            path="/"
+            element={
+              <div className="max-w-5xl mx-auto px-4 py-10">
+                <h1 className="text-3xl font-bold mb-4">
+                  Alina’ya hoş geldin ✨
+                </h1>
+                <p className="text-slate-700">
+                  Burası landing / ana açıklama sayfası. Ürünleri görmek için
+                  yukarıdan &quot;Mağaza&quot; sekmesine, bayilik ödülleri için
+                  &quot;Bayi Ödül Mağazası&quot; sekmesine geçebilirsin.
+                </p>
+              </div>
+            }
+          />
+          {/* Normal mağaza */}
+          <Route path="/store" element={<StorePage />} />
+          {/* Bayi ödül mağazası */}
+          <Route path="/dealer/rewards" element={<DealerRewardsPage />} />
+        </Routes>
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-white border-t border-slate-200">
+        <div className="max-w-5xl mx-auto px-4 py-4 text-xs text-slate-500 flex justify-between">
+          <span>© {new Date().getFullYear()} Alina</span>
+          <span>AlinaCoin bayilik sistemi</span>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+export default App;
+
+
+
