@@ -234,9 +234,9 @@ function App() {
           <Link to="/" className="flex items-center gap-2 group flex-shrink-0">
             <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl overflow-hidden bg-neutral-100 shadow-lg group-hover:shadow-xl transition-all duration-300 flex items-center justify-center">
               <img
-                src={`${API_BASE_URL}/uploads/Alinaurunfotograflari/thumb.jpeg`}
+                src="/uploads/Alinaurunfotograflari/thumb.jpeg"
                 alt="Alina Logo"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
             <span className="text-lg sm:text-xl font-bold text-neutral-900 hidden sm:inline">
@@ -695,9 +695,9 @@ function App() {
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-xl overflow-hidden bg-neutral-100 shadow-md flex items-center justify-center">
                     <img
-                      src={`${API_BASE_URL}/uploads/Alinaurunfotograflari/thumb.jpeg`}
+                      src="/uploads/Alinaurunfotograflari/thumb.jpeg"
                       alt="Alina Logo"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                     />
                   </div>
                   <span className="text-2xl font-semibold text-neutral-900">Alina</span>
