@@ -231,8 +231,8 @@ function App() {
           </button>
 
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group flex-shrink-0">
-            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl overflow-hidden bg-neutral-100 shadow-lg group-hover:shadow-xl transition-all duration-300 flex items-center justify-center">
+          <Link to="/" className="flex items-center gap-3 group flex-shrink-0">
+            <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden bg-neutral-100 shadow-lg group-hover:shadow-xl transition-all duration-300 flex items-center justify-center">
               <img
                 src="/uploads/Alinaurunfotograflari/thumb.jpeg"
                 alt="Alina Logo"
@@ -693,7 +693,7 @@ function App() {
               {/* Header */}
               <div className="flex items-center justify-between pb-4 border-b border-neutral-200">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-xl overflow-hidden bg-neutral-100 shadow-md flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-xl overflow-hidden bg-neutral-100 shadow-md flex items-center justify-center">
                     <img
                       src="/uploads/Alinaurunfotograflari/thumb.jpeg"
                       alt="Alina Logo"
