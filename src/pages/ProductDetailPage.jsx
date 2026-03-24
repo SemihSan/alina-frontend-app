@@ -25,16 +25,10 @@
           if (imageUrl.startsWith('http://') || imageUrl.startsWith('https://')) {
             return imageUrl;
           }
-          if (imageUrl.startsWith('/uploads/')) {
-            return `${API_BASE_URL}${imageUrl}`;
-          }
-          const normalizedPath = imageUrl.replace(/^\/+/, '');
-          return `${API_BASE_URL}/uploads/${normalizedPath}`;
-        }
-
-        export default function ProductDetailPage() {
-          const { slug } = useParams();
-          const navigate = useNavigate();
+  if (imageUrl.startsWith('/')) {
+    return imageUrl;
+  }
+  return `/${imageUrl}`;
           const { addToCart } = useCart();
           const { isFavorite, toggleFavorite } = useFavorites();
           const { user, dealer } = useAuth();

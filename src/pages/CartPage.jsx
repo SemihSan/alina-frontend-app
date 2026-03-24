@@ -17,18 +17,13 @@ function formatPrice(priceCents) {
 
 function getProductImageUrl(imageUrl) {
   if (!imageUrl) return null;
-  const API_BASE_URL = 'http://164.90.236.138:4000';
-
   if (imageUrl.startsWith('http://') || imageUrl.startsWith('https://')) {
     return imageUrl;
   }
-
-  if (imageUrl.startsWith('/uploads/')) {
-    return `${API_BASE_URL}${imageUrl}`;
+  if (imageUrl.startsWith('/')) {
+    return imageUrl;
   }
-
-  const normalizedPath = imageUrl.replace(/^\/+/, '');
-  return `${API_BASE_URL}/uploads/${normalizedPath}`;
+  return `/${imageUrl}`;
 }
 
 export default function CartPage() {

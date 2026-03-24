@@ -294,7 +294,7 @@ function App() {
                         className="flex items-center gap-3 px-4 py-3 hover:bg-neutral-50 transition-colors"
                       >
                         <img
-                          src={`${API_BASE_URL}${product.imageUrl || product.image}`}
+                          src={product.imageUrl || product.image}
                           alt={product.name}
                           className="w-12 h-12 object-cover rounded-lg"
                         />
@@ -616,7 +616,7 @@ function App() {
                       className="flex items-center gap-4 px-4 py-4 hover:bg-neutral-50 active:bg-neutral-100 transition-colors"
                     >
                       <img
-                        src={`${API_BASE_URL}${product.imageUrl || product.image}`}
+                        src={product.imageUrl || product.image}
                         alt={product.name}
                         className="w-16 h-16 object-cover rounded-lg flex-shrink-0"
                       />

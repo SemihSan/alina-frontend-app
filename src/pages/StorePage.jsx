@@ -25,11 +25,10 @@ import { ProductCardSkeleton } from '../components/Skeleton';
     if (imageUrl.startsWith('http://') || imageUrl.startsWith('https://')) {
       return imageUrl;
     }
-    if (imageUrl.startsWith('/uploads/')) {
-      return `${API_BASE_URL}${imageUrl}`;
+    if (imageUrl.startsWith('/')) {
+      return imageUrl;
     }
-    const normalizedPath = imageUrl.replace(/^\/+/, '');
-    return `${API_BASE_URL}/uploads/${normalizedPath}`;
+    return `/${imageUrl}`;
   }
 
   export default function StorePage() {
