@@ -919,10 +919,16 @@ function App() {
               </ul>
             </div>
             <div className="space-y-3">
-              <h4 className="text-sm font-semibold text-neutral-900">Şirket</h4>
-              <ul className="space-y-1 text-sm text-neutral-600">
-                <li><a href="#" className="hover:text-primary-600 transition-colors">Hakkımızda</a></li>
-                <li><a href="#" className="hover:text-primary-600 transition-colors">İletişim</a></li>
+              <h4 className="text-sm font-semibold text-neutral-900">İletişim</h4>
+              <ul className="space-y-2 text-sm text-neutral-600">
+                <li className="flex items-start gap-2">
+                  <span className="mt-0.5">📍</span>
+                  <span>Cevizli Mah. Tugay Yolu Cad. Ofisim İstanbul A Blok No: 20A İç Kapı No: 41 Maltepe / İstanbul</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span>📞</span>
+                  <a href="tel:+905449304034" className="hover:text-primary-600 transition-colors">+90 544 930 40 34</a>
+                </li>
               </ul>
             </div>
             <div className="space-y-3">

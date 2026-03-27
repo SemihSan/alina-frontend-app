@@ -87,11 +87,10 @@ export default function PaymentFailurePage() {
         <div className="mt-8 p-4 bg-blue-50 rounded-xl border border-blue-100">
           <p className="text-blue-800 text-sm">
             <strong>Yardıma mı ihtiyacınız var?</strong><br />
-            Sorun devam ederse 
-            <a href="mailto:destek@alina.com" className="text-blue-600 hover:underline ml-1 font-medium">
-              destek@alina.com
+            Sorun devam ederse bizi arayabilirsiniz:
+            <a href="tel:+905449304034" className="text-blue-600 hover:underline ml-1 font-medium">
+              +90 544 930 40 34
             </a>
-            adresinden bize ulaşabilirsiniz.
           </p>
         </div>
       </div>
